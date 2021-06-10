@@ -367,7 +367,7 @@
                         "value": "[parameters('logicAppBEHostingPlanBEName')]"
                     },
                     "contentStorageAccountName": {
-                        "value": "[parameters('deploymentStorageAccountName')]"
+                        "value": "[parameters('applicationStorageAccountName')]"
                     },        
                     "appStorageAccountName": {
                         "value": "[parameters('applicationStorageAccountName')]"
@@ -435,7 +435,7 @@
                         "value": "[parameters('logicAppFEHostingPlanFEName')]"
                     },
                     "contentStorageAccountName": {
-                        "value": "[parameters('deploymentStorageAccountName')]"
+                        "value": "[parameters('applicationStorageAccountName')]"
                     },        
                     "appStorageAccountName": {
                         "value": "[parameters('applicationStorageAccountName')]"
