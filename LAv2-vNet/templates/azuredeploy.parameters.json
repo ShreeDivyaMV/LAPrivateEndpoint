@@ -131,7 +131,7 @@
             "value": "LogicAppBE-PrivateEndpointConnection"
         },
         "logicAppFEname": {
-            "value": "shmvLogicAppFE0"
+            "value": "shmvLogicAppFE01"
         },
         "logicAppFEHostingPlanFEName": {
             "value": "LogicAppFEPlan"
