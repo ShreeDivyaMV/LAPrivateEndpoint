@@ -77,7 +77,7 @@
             "value": "AzureServices"
         },
         "storageAccountNetworkAclsDefaultAction": {
-            "value": "Allow"
+            "value": "Deny"
         },
         "privateBlobEndpointName": {
             "value": "private-blob-endpoint"
