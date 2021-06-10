@@ -140,7 +140,7 @@
     },
     "variables": {
         "vnetTemplateLink": "https://raw.githubusercontent.com/rohithah/logic-apps-samples/main/LAv2-vNet/templates/vnet.template.json",
-        "deploymentStorageTemplateLink": "https://raw.githubusercontent.com/rohithah/logic-apps-samples/main/LAv2-vNet/templates/deploymentStorage.template.json",
+        
         "applicationStorageTemplateLink": "https://raw.githubusercontent.com/rohithah/logic-apps-samples/main/LAv2-vNet/templates/applicationStorage.template.json",
         "appInsightTemplateLink": "https://raw.githubusercontent.com/rohithah/logic-apps-samples/main/LAv2-vNet/templates/appInsight.template.json",
         "logicAppFETemplateLink": "https://raw.githubusercontent.com/rohithah/logic-apps-samples/main/LAv2-vNet/templates/logicAppFE.template.json",
@@ -219,53 +219,7 @@
                 }
             }
         },
-        {
-            "apiVersion": "2017-05-10",
-            "name": "deploymentStorage",
-            "type": "Microsoft.Resources/deployments",
-            "dependsOn": ["vnet"],
-            "properties": {
-                "mode": "incremental",
-                "templateLink": {
-                    "uri": "[variables('deploymentStorageTemplateLink')]"
-                },
-                "parameters":{
-                    "location": {
-                        "value": "[parameters('location')]"
-                    },
-                    "storageAccountName": {
-                        "value": "[parameters('deploymentStorageAccountName')]"
-                    },
-                    "accountType": {
-                        "value": "[parameters('storageAccountType')]"
-                    },
-                    "kind": {
-                        "value": "[parameters('storageAccountKind')]"
-                    },
-                    "accessTier": {
-                        "value": "[parameters('storageAccountAccessTier')]"
-                    },
-                    "minimumTlsVersion": {
-                        "value": "[parameters('storageAccountMinimumTlsVersion')]"
-                    },
-                    "supportsHttpsTrafficOnly": {
-                        "value": "[parameters('storageAccountSupportsHttpsTrafficOnly')]"
-                    },
-                    "allowBlobPublicAccess": {
-                        "value": "[parameters('storageAccountAllowBlobPublicAccess')]"
-                    },
-                    "allowSharedKeyAccess": {
-                        "value": "[parameters('storageAccountAllowSharedKeyAccess')]"
-                    },
-                    "networkAclsBypass": {
-                        "value": "[parameters('storageAccountNetworkAclsBypass')]"
-                    },
-                    "networkAclsDefaultAction": {
-                        "value": "[parameters('storageAccountNetworkAclsDefaultAction')]"
-                    }
-                }
-            }
-        },
+        
         {
             "apiVersion": "2017-05-10",
             "name": "applicationStorage",
