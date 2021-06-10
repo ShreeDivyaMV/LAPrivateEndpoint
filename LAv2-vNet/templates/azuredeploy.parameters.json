@@ -50,7 +50,7 @@
             "value": "shmvcontosodeployments98"
         },
         "applicationStorageAccountName": {
-            "value": "shmvcontosoappstate0"
+            "value": "shmvcontosoappstate01"
         },
         "storageAccountType": {
             "value": "Standard_LRS"
