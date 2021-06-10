@@ -6,7 +6,7 @@
             "value": "westus2"
         },
         "virtualNetworkName": {
-            "value": "ContosoVNET"
+            "value": "shmvContosoVNET"
         },
         "addressSpaces": {
             "value": [
@@ -47,10 +47,10 @@
             "value": "contosoAppInsight"
         },
         "deploymentStorageAccountName": {
-            "value": "contosodeployments98"
+            "value": "shmvcontosodeployments98"
         },
         "applicationStorageAccountName": {
-            "value": "contosoappstate98"
+            "value": "shmvcontosoappstate98"
         },
         "storageAccountType": {
             "value": "Standard_LRS"
@@ -104,7 +104,7 @@
             "value": "LogicAppBE98"
         },
         "logicAppBEHostingPlanBEName": {
-            "value": "LogicAppBEPlan"
+            "value": "shmvLogicAppBEPlan"
         },
         "logicAppUse32BitWorkerProcess": {
             "value": true
@@ -131,7 +131,7 @@
             "value": "LogicAppBE-PrivateEndpointConnection"
         },
         "logicAppFEname": {
-            "value": "LogicAppFE98"
+            "value": "shmvLogicAppFE98"
         },
         "logicAppFEHostingPlanFEName": {
             "value": "LogicAppFEPlan"
