@@ -224,7 +224,7 @@
             "apiVersion": "2017-05-10",
             "name": "applicationStorage",
             "type": "Microsoft.Resources/deployments",
-            "dependsOn": ["deploymentStorage", "vnet"],
+            "dependsOn": [ "vnet"],
             "properties": {
                 "mode": "incremental",
                 "templateLink": {
@@ -301,7 +301,7 @@
             "apiVersion": "2017-05-10",
             "name": "logicAppBE",
             "type": "Microsoft.Resources/deployments",
-            "dependsOn": ["deploymentStorage", "vnet", "applicationStorage", "appInsight"],
+            "dependsOn": [ "vnet", "applicationStorage", "appInsight"],
             "properties": {
                 "mode": "incremental",
                 "templateLink": {
@@ -369,7 +369,7 @@
             "apiVersion": "2017-05-10",
             "name": "logicAppFE",
             "type": "Microsoft.Resources/deployments",
-            "dependsOn": ["deploymentStorage", "vnet", "applicationStorage", "appInsight"],
+            "dependsOn": [ "vnet", "applicationStorage", "appInsight"],
             "properties": {
                 "mode": "incremental",
                 "templateLink": {
